@@ -623,20 +623,18 @@ body.lb-open .nav,body.lb-open .floats{opacity:0; pointer-events:none; transitio
 
   <!-- ─────────────────────────── GALERI ───────────────────────── -->
   <section class="sec" id="galeri">
+   <img class="corner is-tl" src="assets/sudut-bunga.svg?v=2" alt="">
     <h2 class="h2 rv">Gallery</h2>
 
-    <div class="gal rv d1" id="gal">
-      <!-- width/height = saiz sebenar fail, supaya susunan dikira sebelum gambar dimuatkan -->
-      <figure><img src="assets/galeri/01.jpeg" width="820" height="547" alt="Kenangan Faizzal &amp; Syahirah" loading="lazy" onerror="this.parentNode.dataset.gone=1"></figure>
-      <figure><img src="assets/galeri/02.jpeg" width="547" height="820" alt="Kenangan Faizzal &amp; Syahirah" loading="lazy" onerror="this.parentNode.dataset.gone=1"></figure>
-      <figure><img src="assets/galeri/03.jpeg" width="547" height="820" alt="Kenangan Faizzal &amp; Syahirah" loading="lazy" onerror="this.parentNode.dataset.gone=1"></figure>
-      <figure><img src="assets/galeri/04.jpg" width="547" height="820" alt="Kenangan Faizzal &amp; Syahirah" loading="lazy" onerror="this.parentNode.dataset.gone=1"></figure>
-      <figure><img src="assets/galeri/05.jpeg" width="547" height="820" alt="Kenangan Faizzal &amp; Syahirah" loading="lazy" onerror="this.parentNode.dataset.gone=1"></figure>
-      <figure><img src="assets/galeri/06.jpg" width="820" height="547" alt="Kenangan Faizzal &amp; Syahirah" loading="lazy" onerror="this.parentNode.dataset.gone=1"></figure>
-	  <figure><img src="assets/galeri/07.jpg" width="820" height="547" alt="Kenangan Faizzal &amp; Syahirah" loading="lazy" onerror="this.parentNode.dataset.gone=1"></figure>
+    
+      <!-- width/height = saiz sebenar fail, supaya susunan dikira sebelum gambar dimuatkan -->\
+	   <figure><img src="assets/galeri/06.jpg" loading="lazy" onerror="this.parentNode.dataset.gone=1"></figure>
+	  <figure><img src="assets/galeri/07.jpg" loading="lazy" onerror="this.parentNode.dataset.gone=1"></figure>
+      <figure><img src="assets/galeri/02.jpeg"></figure>
+     
       <!-- Slot kosong: letak 12.jpg / 13.jpg dalam assets/galeri/ dan ia muncul sendiri. -->
 
-    </div>
+<img class="corner is-br" src="assets/sudut-bunga.svg?v=2" alt="">
   </section>
 
   <!-- ─────────────────────────── HUBUNGI ──────────────────────── -->
@@ -775,7 +773,7 @@ body.lb-open .nav,body.lb-open .floats{opacity:0; pointer-events:none; transitio
     /* Apps Script web app yang menyokong Google Sheet ucapan — sama seperti
        kad sage, jadi kedua-dua kad menulis ke helaian yang sama.
        Lihat SETUP-GUESTBOOK.md dalam folder `digital card`. */
-    gbApi   : "https://script.google.com/macros/s/AKfycbyAbxj2WaDpBpohmY2IeS_-NqKRryUmfoqOoCZgqMebVc15uEVC09Eop1ljdUEp9d0i/exec"
+    gbApi   : "https://script.google.com/macros/s/AKfycbyx6Makl4yE2g1Dch_DgeBXSUXgLLqWIkKxFEypJaCaK4fMuPKXmfDXBB064OqTTb4-/exec"
   };
 
   var $  = function(s){ return document.querySelector(s); };
