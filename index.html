@@ -1003,7 +1003,7 @@ body.lb-open .nav,body.lb-open .floats{opacity:0; pointer-events:none; transitio
     }).join("");
     listEl.className = "gb" + (expanded ? " gb-list-open" : "");
     moreEl.hidden = wishes.length <= SHOW;
-    moreEl.textContent = expanded ? "Tunjuk kurang" : ("Lihat semua " + wishes.length + " ucapan");
+    moreEl.textContent = expanded ? "SHOW LESS" : ("SHOW ALL");
   }
   moreEl.addEventListener("click", function(){ expanded = !expanded; render(); });
 
@@ -1021,11 +1021,6 @@ body.lb-open .nav,body.lb-open .floats{opacity:0; pointer-events:none; transitio
 
     /* Dibuka terus dalam pengendali klik. Kalau ditangguh sehingga selepas
        fetch selesai, Safari menganggapnya popup dan menyekatnya. */
-    window.open(
-      "https://wa.me/" + EVENT.familyWA + "?text=" +
-      encodeURIComponent("Ucapan daripada " + n + ":\n\n" + m),
-      "_blank", "noopener"
-    );
 
     $("#gbName").value = ""; $("#gbMsg").value = "";
     var mine = { name:n, msg:m, time:new Date().toISOString(), pending:true };
